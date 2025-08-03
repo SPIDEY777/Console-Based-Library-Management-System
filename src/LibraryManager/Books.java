@@ -112,7 +112,7 @@ public class Books {
     public void showAllBooks()
     {
 
-        System.out.println("\t\t\t\tSHOWING ALL BOOKS\n");
+        System.out.println("\t\t\t\t\tSHOWING ALL BOOKS\n");
         System.out.println(
                 "S.No\t\tName\t\tAuthor\t\tAvailable Qty\t\tTotal Qty");
 
@@ -153,7 +153,7 @@ public class Books {
         }
     }
 
-    public void dispMenu()
+    public void displayMenu()
     {
 
         // Displaying menu
@@ -221,6 +221,10 @@ public class Books {
             }
         }
     }
+
+
+
+
 
 
 }

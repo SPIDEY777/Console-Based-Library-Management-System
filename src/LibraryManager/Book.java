@@ -12,7 +12,7 @@ public class Book {
 
     Scanner input = new Scanner(System.in);
 
-    public book(){
+    public Book(){
 
         System.out.println("Enter Serial No. of Book:");
         this.Sno = input.nextInt();
@@ -26,7 +26,7 @@ public class Book {
 
         System.out.println("Enter Quantity of Books:");
         this.bookQty = input.nextInt();
-        getBookQtyCopy = this.bookQty;
+        bookQtyCopy = this.bookQty;
     }
 
 

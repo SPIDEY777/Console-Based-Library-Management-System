@@ -21,7 +21,7 @@ public class Library {
         Students obStudent = new Students();
 
         int choice;
-        int searchChoice;
+        int searchChoice=0;
         do {
             ob.displayMenu();
             choice = input.nextInt();
@@ -39,15 +39,19 @@ public class Library {
                 case 3:
                     System.out.println("Press 1 to search with Book Serial No.");
                     System.out.println("Press 2 to search with Book's Author Name.");
-
+                    searchChoice = input.nextInt(); // take input here
                     switch (searchChoice) {
                         case 1:
                             ob.searchBySno();
                             break;
                         case 2:
                             ob.searchByAuthorName();
+                            break;
+                        default:
+                            System.out.println("Invalid search choice.");
                     }
                     break;
+
 
                 case 4:
                     ob.showAllBooks();
